@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+
+
+    <TextView
+        android:text="@string/Dictionary_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold|italic"
+        android:textSize="30sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:fontFamily="serif"
+        android:layout_margin="5dp"
+        android:id="@+id/textView1" />
+    <TextView
+        android:text="@string/error_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:textColor="#ff0000"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/error_txt_id" />
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold|italic"
+        android:fontFamily="serif"
+        android:hint="@string/dic_edit_txt"
+        android:id="@+id/edit_txt" />
+    <TextView
+        android:text="@string/Dict_Word"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:id="@+id/Word_txt" />
+    <Button
+        android:text="Search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fontFamily="serif"
+        android:textStyle="bold|italic"
+        android:id="@+id/btn_search" />
+    <TextView
+        android:text="@string/phonetics_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="serif"
+        android:id="@+id/textView2" />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/phonetics_list" />
+    <TextView
+        android:text="@string/meanings_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:textColor="@color/colorPrimary"
+        android:layout_margin="5dp"
+        android:textSize="20sp"
+        android:id="@+id/textView3" />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/meanings_list" />
+
+
+</LinearLayout>

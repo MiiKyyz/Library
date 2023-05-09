@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Book Searcher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:textSize="30sp"
+        android:layout_margin="5dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:fontFamily="serif"
+        android:textStyle="bold|italic"
+        android:id="@+id/title" />
+    <TextView
+        android:text="@string/error_txt_book"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ff0000"
+        android:textStyle="bold|italic"
+        android:layout_marginLeft="5dp"
+        android:fontFamily="serif"
+        android:id="@+id/error_txt_book" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:id="@+id/linearLayout1">
+        <AutoCompleteTextView
+            android:hint="Book Name"
+            android:layout_width="275dp"
+            android:layout_height="match_parent"
+            android:paddingLeft="7dp"
+            android:fontFamily="serif"
+            android:textStyle="bold|italic"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="4dp"
+            android:id="@+id/edit_txt" />
+        <Button
+            android:text="Filter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="serif"
+            android:textStyle="bold|italic"
+            app:cornerRadius="15dp"
+            android:textSize="12sp"
+            android:id="@+id/Filter_btn" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout2">
+        <TextView
+            android:text="Page 0"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:fontFamily="serif"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/Page_Counter" />
+        <Button
+            android:text="Search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            app:cornerRadius="10dp"
+            android:textStyle="bold|italic"
+            android:fontFamily="serif"
+            android:id="@+id/btn_search" />
+    </LinearLayout>
+
+
+
+
+    <ListView
+        android:layout_below="@id/btn_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/listView_book" />
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLa">
+        <Button
+            android:text="Previous"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            app:cornerRadius="10dp"
+            android:fontFamily="serif"
+            android:textStyle="bold|italic"
+            android:id="@+id/Previuos" />
+        <Button
+            android:text="Next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            app:cornerRadius="10dp"
+            android:fontFamily="serif"
+            android:textStyle="bold|italic"
+            android:id="@+id/next"
+     
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

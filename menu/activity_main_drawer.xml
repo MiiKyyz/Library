@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+  
+
+
+
+	<group android:checkableBehavior="single">
+
+		<item
+			android:id="@+id/Short_stories"
+			android:icon="@drawable/Short_stories"
+			android:title="Short stories" />
+		
+		
+		<item
+			android:id="@+id/Book"
+			android:icon="@drawable/Book"
+			android:title="Book" />
+		<item
+			android:id="@+id/Dictionary"
+			android:icon="@drawable/Dictionary"
+			android:title="Dictionary " />
+
+		<item
+			android:id="@+id/Poems"
+			android:icon="@drawable/Poems_and_Quotes"
+			android:title="Poems" />
+		<item
+			android:id="@+id/Quotes"
+			android:icon="@drawable/Poems_and_Quotes"
+			android:title="Quotes" />
+		
+	</group>
+	
+	
+</menu>

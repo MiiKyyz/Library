@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:text="@string/quotes_titles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:fontFamily="serif"
+        android:textStyle="bold|italic"
+        android:layout_margin="10dp"
+        android:id="@+id/textView1" />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dialog"
+        android:prompt="@string/Spinner_txt"
+        android:id="@+id/spinner_quote" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1">
+        <AutoCompleteTextView
+            android:layout_width="220dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/colorPrimaryDark"
+            android:fontFamily="serif"
+            android:textStyle="bold|italic"
+            android:hint="@string/quotes_titles"
+            android:id="@+id/edit_quotes" />
+        <AutoCompleteTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:textColor="@color/colorPrimaryDark"
+            android:fontFamily="serif"
+            android:textStyle="bold|italic"
+            android:hint="@string/number_txt"
+            android:id="@+id/num_Edit" />
+    </LinearLayout>
+    <Button
+        android:text="@string/btn_Quotes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:textStyle="bold|italic"
+        android:id="@+id/btn_quote" />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list_quote_view" />
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/paneldesign"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:text="title author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:justificationMode="inter_word"
+        android:textStyle="bold|italic"
+        android:textColor="@color/short_desc"
+        android:fontFamily="serif"
+        android:padding="5dp"
+        android:lineSpacingExtra="8dp"
+        android:id="@+id/title_author" />
+    <TextView
+        android:text="@string/btn_title_poems"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:justificationMode="inter_word"
+        android:layout_margin="15dp"
+        android:padding="15dp"
+        android:textStyle="italic"
+        android:textColor="@color/short_desc"
+        android:fontFamily="serif"
+        android:lineSpacingExtra="8dp"
+        android:id="@+id/poem_content" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:id="@+id/linearLayout1">
+
+        <TextView
+            android:text="Author:"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:textColor="@color/short_desc"
+            android:fontFamily="serif"
+            android:id="@+id/textView1" />
+
+        <TextView
+            android:text="author_txt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:textColor="@color/short_desc"
+            android:fontFamily="serif"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/author_txt" />
+        
+    </LinearLayout>
+
+</LinearLayout>
